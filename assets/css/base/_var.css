@@ -1,0 +1,37 @@
+:root {
+    
+    /* colors */
+    --purple-main: #9933FF;
+    --purple-100:#D6ADFF;
+    --purple-200: #C285FF;
+    --purple-300: #AD5CFF;
+    --purple-400: #7A29CC;
+    --purple-500: #5C1F99;
+    --purple-600: #3D1466;
+
+    /* family-font */
+    --family-body: 'Source Sans Pro', sans-serif;
+ 
+    /* font-size */
+    --size-body: 1rem;
+    --size-topbar: 1rem;
+    --size-button: 1.25rem;
+    --size-h1: 2.25rem;
+    --size-h2: 1.25rem;
+    --size-menu: 1.125rem;    
+
+    /* font-weight */
+    --weight-body: 400;
+    --weight-topbar: 400;   
+    --weight-button: 600;    
+    --weight-h1: 400;
+    --weight-h2: 600;
+    --weight-menu: 400;
+    --weight-menu_hover: 600;
+
+    /* line-height */
+    --height-body: 1.5rem;
+    --height-topbar: 1.5rem;
+    --height-h1: 2.5rem;
+    --height-h2: 1.75rem;
+}

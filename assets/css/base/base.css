@@ -1,32 +1,45 @@
 @import url(_var.css);
 @import url(_reset.css);
 
+html {
+
+
+}
+
 body { 
     font-family: var(--family-body);
-    font-size: var(--family-size);
+    font-size: var(--size-body);
+    color: var(--purple-600);
+    
+
 }
 
-.topbar {
-    background-color: var(--purple-600);
-    font-size: var(--size-topbar);
-    font-weight: var(--weight-topbar);
-    line-height: var(--height-topbar);
+header {
+    max-width: 1180px;
+    margin: 2.5rem auto;
+
 }
 
-ul {
+ul, li {
     font-size: var(--size-menu);
     font-weight: var(--weight-menu);
     line-height: var(--height-menu);
+
+    text-align: right;
 }
 
-ul:hover {
+ul {
+    margin-right: 4.75rem;
+}
+
+li {
+    display: inline-block;
+    padding: 1rem;
+}
+
+li:hover {
     font-weight: var(--weight-menu_hover);
-    transition: 130ms;
-}
-
-.container {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    cursor: pointer;
 }
 
 h1 {

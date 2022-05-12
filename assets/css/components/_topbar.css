@@ -1,0 +1,16 @@
+.topbar {
+    background-color: var(--purple-600);
+    
+    font-family: var(--family-body);
+    font-size: var(--size-topbar);
+    font-weight: var(--weight-topbar);    
+    
+    color: var(--white-main);
+    
+    line-height: var(--height-topbar);
+    text-align: center;
+    
+    padding: 12px;
+
+    width: 100%;
+}

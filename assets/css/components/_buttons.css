@@ -7,9 +7,7 @@
     font-size: var(--family-size);
     color: white;
 
-    width: 100%;
-    padding-top: 1 rem;
-    padding-bottom: 1 rem;
+    padding: 1rem 4.75rem;
 
     border: none;
 }

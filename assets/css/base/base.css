@@ -10,14 +10,40 @@ body {
     font-family: var(--family-body);
     font-size: var(--size-body);
     color: var(--purple-600);
-    
-
 }
 
-header {
-    max-width: 1180px;
-    margin: 2.5rem auto;
+header, .banner {
+    background-color: rgba(var(--purple-100), 0.15);
+}
 
+.banner__desktop {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+    padding: 2rem 0 5rem 0 ;
+}
+
+.banner__text {
+    max-width: 580px;
+}
+
+.banner__text--small {
+    font-size: 0.875rem;    
+}
+
+.banner__text--big {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+nav {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 2.5rem 0;
 }
 
 ul, li {
@@ -41,6 +67,12 @@ li:hover {
     font-weight: var(--weight-menu_hover);
     cursor: pointer;
 }
+
+img {
+    im
+
+}
+
 
 h1 {
     font-size: var(--size-h1);

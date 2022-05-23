@@ -1,40 +1,39 @@
 :root {
-    
-    /* colors */
-    --purple-main: #9933FF;
-    --white-main: #fff;
-    --black-main: #000;
+  /* colors */
+  --purple-main: #9933ff;
+  --white-main: #fff;
+  --black-main: #000;
 
-    --purple-100: 214, 173, 255;
-    --purple-200: #C285FF;
-    --purple-300: #AD5CFF;
-    --purple-400: #7A29CC;
-    --purple-500: #5C1F99;
-    --purple-600: #3D1466;
+  --purple-100: 214, 173, 255;
+  --purple-200: #c285ff;
+  --purple-300: #ad5cff;
+  --purple-400: #7a29cc;
+  --purple-500: #5c1f99;
+  --purple-600: #3d1466;
 
-    /* family-font */
-    --family-body: 'Source Sans Pro', sans-serif;
- 
-    /* font-size */
-    --size-body: 1rem;
-    --size-topbar: 1rem;
-    --size-button: 1.25rem;
-    --size-h1: 2.25rem;
-    --size-h2: 1.25rem;
-    --size-menu: 1.125rem;    
+  /* family-font */
+  --family-body: "Source Sans Pro", sans-serif;
 
-    /* font-weight */
-    --weight-body: 400;
-    --weight-topbar: 400;   
-    --weight-button: 600;    
-    --weight-h1: 400;
-    --weight-h2: 600;
-    --weight-menu: 400;
-    --weight-menu_hover: 600;
+  /* font-size */
+  --size-body: 1rem;
+  --size-topbar: 1rem;
+  --size-button: 1.25rem;
+  --size-h1: 2.25rem;
+  --size-h2: 1.25rem;
+  --size-menu: 1.125rem;
 
-    /* line-height */
-    --height-body: 1.5rem;
-    --height-topbar: 1.5rem;
-    --height-h1: 2.5rem;
-    --height-h2: 1.75rem;
+  /* font-weight */
+  --weight-body: 400;
+  --weight-topbar: 400;
+  --weight-button: 600;
+  --weight-h1: 400;
+  --weight-h2: 600;
+  --weight-menu: 400;
+  --weight-menu_hover: 600;
+
+  /* line-height */
+  --height-body: 1.5rem;
+  --height-topbar: 1.5rem;
+  --height-h1: 2.5rem;
+  --height-h2: 1.75rem;
 }

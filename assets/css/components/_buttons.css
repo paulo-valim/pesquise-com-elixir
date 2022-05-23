@@ -1,27 +1,39 @@
 .button {
-    background-color: var(--purple-main);
+  background-color: var(--purple-main);
 
-    text-align: center;
-    font-family: inherit;
-    font-weight: 600;
-    font-size: var(--family-size);
-    color: white;
+  text-align: center;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: var(--family-size);
+  color: white;
 
-    padding: 1rem 4.75rem;
+  padding: 1rem 6rem;
 
-    border: none;
+  border: none;
 }
 
 .button--outlined {
-    background-color: unset;
+  background-color: unset;
 
-    color: var(--purple-main);
+  color: var(--purple-main);
 
-    border: 4px solid var(--purple-main)
+  border: 4px solid var(--purple-main);
+
+  padding: 1rem 7rem;
 }
 
 .button--none {
-    background-color: unset;
+  background-color: unset;
 
-    color: var(--purple-main);
+  color: var(--purple-main);
+
+  padding: 1rem 4rem;
+}
+
+.button--darkText {
+  background-color: unset;
+
+  color: var(--purple-600);
+
+  padding: 1rem 4rem;
 }

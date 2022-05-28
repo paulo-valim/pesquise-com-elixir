@@ -1,50 +1,199 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pesquise com Elixir</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/base/base.css">
-<link rel="stylesheet" href="assets/css/components/components.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&family=Source+Sans+Pro:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/base/base.css" />
+    <link rel="stylesheet" href="assets/css/components/components.css" />
+  </head>
+  <body>
     <!-- top bar notification -->
+<<<<<<< HEAD
     <section class="topbar">
         Temos 3 bolsas disponíveis, faça sua inscrição!
     </section>
     <!-- Navbar desktop -->
+=======
+    <div class="topbar">Temos 3 bolsas disponíveis, faça sua inscrição!</div>
+    <!-- Navbar desktop  -->
+>>>>>>> refs/remotes/origin/main
     <header>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Parceiros</li>
-                <li>Publicações</li>
-                <li>Como funciona</li>
-                <li>FAQ</li>
-            </ul>
-        </nav>
+      <nav>
+        <ul class="nav__menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#partners">Parceiros</a></li>
+          <li><a href="#papers">Publicações</a></li>
+          <li><a href="#how_to">Como funciona</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
     </header>
     <!-- Intro -->
     <main>
-        <section id="home" class="banner">
-            <div class="banner__desktop">
-                <img src="assets/img/img__logo--bglight.png" alt="logo pesquise com elixir" width="380" height="138.42">
-                <div class="banner__text">
-                    <p class="banner__text--small">Através da pesquisa e adoção do Elixir</p>
-                    <p class="banner__text--big">Conectamos empresas e universidades brasileiras com bolsas de mestrado e doutorado</p>
-                    <button class="button">Fazer Inscrição</button>
-                    <button class="button button--none">Saiba mais</button>
-                </div>
-            </div>
-        </section>
+      <section id="home" class="banner">
+        <div class="banner__desktop">
+          <img
+            src="assets/img/img__logo--bglight.png"
+            alt="logo pesquise com elixir"
+            width="380"
+            height="138.42"
+          />
+          <div class="banner__text">
+            <p class="banner__text--small">
+              Através da pesquisa e adoção do Elixir
+            </p>
+            <p class="banner__text--big">
+              Conectamos empresas e universidades brasileiras com bolsas de
+              mestrado e doutorado
+            </p>
+            <button class="button">Fazer Inscrição</button>
+            <button class="button button--darkText">Saiba mais</button>
+          </div>
+        </div>
+      </section>
+      <section id="partners">
+        <div class="partners__title">
+          <h1>Empresas apoiadoras</h1>
+        </div>
+        <div class="partners__logo">
+          <img
+            src="assets/img/img__logo--bglight.png"
+            alt="logo pesquise com elixir"
+          />
+          <img
+            src="assets/img/img__logo--bglight.png"
+            alt="logo pesquise com elixir"
+          />
+          <img
+            src="assets/img/img__logo--bglight.png"
+            alt="logo pesquise com elixir"
+          />
+          <img
+            src="assets/img/img__logo--bglight.png"
+            alt="logo pesquise com elixir"
+          />
+        </div>
+        <div class="partners__cta">
+          <hr />
+          <button class="button button--outlined">Quero fazer parte!</button>
+          <hr />
+        </div>
+      </section>
+      <section id="universities">
+        <div class="universities__title">
+          <h1>Universidades participantes</h1>
+        </div>
+        <div class="universities__logo">
+          <img
+            src="assets/img/img__logo--bglight.png"
+            alt="logo pesquise com elixir"
+          />
+          <img
+            src="assets/img/img__logo--bglight.png"
+            alt="logo pesquise com elixir"
+          />
+          <img
+            src="assets/img/img__logo--bglight.png"
+            alt="logo pesquise com elixir"
+          />
+          <img
+            src="assets/img/img__logo--bglight.png"
+            alt="logo pesquise com elixir"
+          />
+        </div>
+      </section>
+      <section id="papers">
+        <div class="papers__title">
+          <h1>Publicações</h1>
+        </div>
+        <div class="papers__published">
+          <ol class="papers__published--list">
+            <li class="papers__published--item">
+              1. Lorem ipsum is a placeholder text commonly used to demonstrate
+              the visual form of a document or a typeface without relying on
+              meaningful content.
+              <p class="papers__published--details"></p>
+                Project bio, 2022, details
+              </p>
+            </li>
+            <li class="papers__published--item">
+              2. Lorem ipsum is a placeholder text commonly used to demonstrate
+              the visual form of a document or a typeface without relying on
+              meaningful content.
+              <p class="papers__published--details">
+                Project bio, 2022, details
+              </p>
+            </li>
+            <li class="papers__published--item">
+              3. Lorem ipsum is a placeholder text commonly used to demonstrate
+              the visual form of a document or a typeface without relying on
+              meaningful content.
+              <p class="papers__published--details">
+                Project bio, 2022, details
+              </p>
+            </li>
+            <li class="papers__published--item">
+              4. Lorem ipsum is a placeholder text commonly used to demonstrate
+              the visual form of a document or a typeface without relying on
+              meaningful content.
+              <p class="papers__published--details">
+                Project bio, 2022, details
+              </p>
+            </li>
+          </ol>
+        </div>
+        <div class="papers__all">
+        <button class="button button--none">Ver todos</button>
+        </div>
+      </section>
+      <section id="elixir">
+        <div class="whyElixir">
+          <div class="whyElixir__box">
+            <h1>Por que Elixir?</h1>
+            <p class="whyElixir__description">Elixir é uma linguagem de programação dinâmica e funcional, usada para construir aplicações escaláveis desenvolvida pelo brasileiro José Valim em 2012.</p>
+            <button class="button button--none">saiba mais</button>
+          </div>
+          <div class="whyElixir__logo">
+            <img src="/assets/img/img__logo--oficial.png" alt="Logo Elixir">
+          </div>
+        </div>
+        <div class="elixir__features">
+          <div class="elixir__features--1">
+            <h2>Scalability</h2>
+            <p>All Elixir code runs inside lightweight threads of execution (called processes) that are isolated and exchange information via messages.</p>
+          </div>
+          <div class="elixir__features--2">
+            <h2>Fault-tolerance</h2>
+            <p>The unavoidable truth about software running in production is that things will go wrong. Even more when we take network, file systems, and more.</p>
+          </div>
+          <div class="elixir__features--3">
+            <h2>Extensibility</h2>
+            <p>Elixir has been designed to be extensible, letting developers naturally extend the language to particular domains, in order to increase their productivity.</p>
+          </div>
+          <div class="elixir__features--4">
+            <h2>Scalability</h2>
+            <p>All Elixir code runs inside lightweight threads of execution (called processes) that are isolated and exchange information via messages.</p>
+          </div>
+          <div class="elixir__features--5">
+            <h2>Fault-tolerance</h2>
+            <p>The unavoidable truth about software running in production is that things will go wrong. Even more when we take network, file systems, and more.</p>
+          </div>
+          <div class="elixir__features--6">
+            <h2>Extensibility</h2>
+            <p>Elixir has been designed to be extensible, letting developers naturally extend the language to particular domains, in order to increase their productivity.</p>
+          </div>
+        </div>
+      </section>
     </main>
-    
-    <footer>
 
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>

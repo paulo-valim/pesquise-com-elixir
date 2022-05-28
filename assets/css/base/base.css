@@ -50,7 +50,9 @@ a:hover {
 #partners,
 #universities,
 #papers,
-.elixir {
+.whyElixir,
+.elixir__features,
+#how {
   max-width: 1180px;
   margin: 0 auto;
 }
@@ -93,7 +95,8 @@ h2 {
 .partners__title,
 .universities__title,
 .papers__title,
-#elixir {
+#elixir,
+#how {
   margin-top: 5rem;
 }
 
@@ -140,23 +143,42 @@ hr {
   margin-top: 1rem;
 }
 
-.elixir {
+.whyElixir {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 
-  padding: 5rem 0;
+  padding: 5rem 0 2.5rem 0;
 }
 
-.elixir__box {
+.whyElixir__box {
   max-width: 36.25rem;
 }
 
-.elixir__description {
+.whyElixir__description {
   margin-top: 2rem;
+
+  line-height: 1.5rem;
 }
 
-.elixir__logo {
+.whyElixir__logo {
   margin-right: 6.25rem;
+}
+
+.elixir__features,
+.how__step {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 5rem 10rem;
+
+  padding: 2.5rem 0 5rem 0;
+}
+
+div[class^="elixir__features--"] > p,
+div[class^="how__step--"] > p {
+  margin-top: 1rem;
+
+  line-height: 1.5rem;
 }

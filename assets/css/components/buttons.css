@@ -30,10 +30,22 @@
   padding: 1rem 0rem;
 }
 
+.button--none:hover {
+  text-decoration: underline;
+}
+
 .button--darkText {
   background-color: unset;
 
   color: var(--purple-600);
 
   padding: 1rem 4rem;
+}
+
+.button--darkText:hover {
+  text-decoration: underline;
+}
+
+.button__whyElixir {
+  padding: 0.25rem 0.5rem;
 }

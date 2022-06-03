@@ -20,7 +20,8 @@ nav {
 }
 
 .nav__menu,
-a {
+nav > ul > li > a,
+footer > div > ul > li > a {
   font-size: var(--size-menu);
   font-weight: var(--weight-menu);
   line-height: var(--height-menu);
@@ -34,15 +35,13 @@ a {
   margin-right: 4.5rem;
 }
 
-a {
+li {
+  display: inline-block;
   padding: 1rem;
 }
 
-li {
-  display: inline-block;
-}
-
-a:hover {
+nav > ul > li > a:hover,
+footer > div > ul > li > a:hover {
   font-weight: var(--weight-menu_hover);
 }
 
@@ -82,6 +81,13 @@ hr,
   font-size: 3rem;
   margin-top: 0.5rem;
   margin-bottom: 2rem;
+}
+
+.banner__text > button > a:hover,
+.papers__published--item > a:hover,
+.papers__published--details > a:hover,
+.papers__all > button > a:hover {
+  text-decoration: underline;
 }
 
 h1 {
@@ -136,6 +142,12 @@ hr {
   padding: 1rem 0 1rem 0;
 }
 
+.papers__published--item > a,
+.papers__published--details > a {
+  font-weight: 600;
+  color: var(--purple-600);
+}
+
 .papers__published--details {
   padding-top: 0.5rem;
 }
@@ -174,7 +186,7 @@ hr {
 .how__step {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 5rem 10rem;
+  gap: 5rem 4rem;
 
   padding: 2.5rem 0 5rem 0;
 }

@@ -24,7 +24,7 @@
           <li><a href="#home">Home</a></li>
           <li><a href="#partners">Parceiros</a></li>
           <li><a href="#papers">Publicações</a></li>
-          <li><a href="#how_to">Como funciona</a></li>
+          <li><a href="#how">Como funciona</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
       </nav>
@@ -48,7 +48,9 @@
               mestrado e doutorado
             </p>
             <button class="button">Fazer Inscrição</button>
-            <button class="button button--darkText">Saiba mais</button>
+            <button class="button button--darkText" onclick="window.location.href='#how'">
+              Saiba mais</a>
+            </button>
           </div>
         </div>
       </section>
@@ -110,11 +112,29 @@
         <div class="papers__published">
           <ol class="papers__published--list">
             <li class="papers__published--item">
-              1. Lorem ipsum is a placeholder text commonly used to demonstrate
-              the visual form of a document or a typeface without relying on
-              meaningful content.
+              1.
+              <a
+                href="https://doi.org/10.48550/arXiv.2203.08877"
+                target="_blank"
+                >Code Smells in Elixir: Early Results from a Grey Literature
+                Review</a
+              >, International Conference on Program Comprehension (ICPC), 2022.
+              <a
+                href="https://github.com/lucasvegi/Elixir-Code-Smells/blob/main/etc/Code-Smells-in-Elixir-ICPC22-Lucas-Vegi.pdf"
+                target="_blank"
+                >[slides]</a
+              >
+              <a href="https://youtu.be/3X2gxg13tXo" target="_blank">[video]</a>
+              <a
+                href="https://open.spotify.com/episode/2obcLubYmUzacPDCFl09m4?si=jWEH_7y1QoK4QuYsYUY9nA"
+                target="_blank"
+                >[podcast (pt-BR)]</a
+              >
               <p class="papers__published--details">
-                Project bio, 2022, details
+                Lucas Vegi and Marco Tulio Valente, from
+                <a href="http://aserg.labsoft.dcc.ufmg.br/" target="_blank"
+                  >ASERG/DCC/UFMG</a
+                >.
               </p>
             </li>
             <li class="papers__published--item">
@@ -144,7 +164,12 @@
           </ol>
         </div>
         <div class="papers__all">
-          <button class="button button--none">Ver todos</button>
+          <button
+            class="button button--none"
+            onclick="window.location.href='#faq'"
+          >
+            Ver todos
+          </button>
         </div>
       </section>
       <section id="elixir">
@@ -156,7 +181,7 @@
               para construir aplicações escaláveis desenvolvida pelo brasileiro
               José Valim em 2012.
             </p>
-            <button class="button button--none">saiba mais</button>
+            <button class="button button--none button__whyElixir" onclick="window.open('https://elixir-lang.org/','_blank')" target="_blank">saiba mais</button>
           </div>
           <div class="whyElixir__logo">
             <img src="assets/img/img__logo--oficial.png" alt="Logo Elixir" />
@@ -166,49 +191,37 @@
           <div class="elixir__features--1">
             <h2>Scalability</h2>
             <p>
-              All Elixir code runs inside lightweight threads of execution
-              (called processes) that are isolated and exchange information via
-              messages.
+              Todo o código Elixir é executado dentro de threads de execução leves (chamados de processos) que são isolados e trocam informações por meio de mensagens. O isolamento permite que os processos sejam coletados de forma independente, usando todos os recursos da máquina da maneira mais eficiente possível.
             </p>
           </div>
           <div class="elixir__features--2">
             <h2>Fault-tolerance</h2>
             <p>
-              The unavoidable truth about software running in production is that
-              things will go wrong. Even more when we take network, file
-              systems, and more.
+              A verdade inevitável sobre software rodando em produção é que as coisas vão dar errado. Para lidar com falhas, Elixir fornece supervisores que descrevem como reiniciar partes do seu sistema quando as coisas dão errado, voltando a um estado inicial conhecido que é garantido para funcionar. 
             </p>
           </div>
           <div class="elixir__features--3">
             <h2>Extensibility</h2>
             <p>
-              Elixir has been designed to be extensible, letting developers
-              naturally extend the language to particular domains, in order to
-              increase their productivity.
+              Elixir foi projetado para ser extensível, permitindo que os desenvolvedores estendam naturalmente a linguagem para domínios específicos, a fim de aumentar sua produtividade. 
+              Além permitir testes executados em paralelo, usando o maior número possível de núcleos de CPU e fornercer ótimos relatórios em caso de falhas.
             </p>
           </div>
           <div class="elixir__features--4">
-            <h2>Scalability</h2>
+            <h2>Distribuition</h2>
             <p>
-              All Elixir code runs inside lightweight threads of execution
-              (called processes) that are isolated and exchange information via
-              messages.
-            </p>
+              Em Elixir os processos são capazes de se comunicar com outros processos executados em máquinas diferentes na mesma rede. Isso fornece a base para distribuição, permitindo que os desenvolvedores coordenem o trabalho em vários permitindo também um escalonamento vertical. </p>
           </div>
           <div class="elixir__features--5">
-            <h2>Fault-tolerance</h2>
+            <h2>Functional programming</h2>
             <p>
-              The unavoidable truth about software running in production is that
-              things will go wrong. Even more when we take network, file
-              systems, and more.
+              A programação funcional promove um estilo de codificação que ajuda os desenvolvedores a escrever um código curto, conciso e de fácil manutenção. O Elixir depende muito desses recursos para garantir que seu software funcione sob as restrições esperadas. E quando não for, não se preocupe, os supervisores te apoiam!
             </p>
           </div>
           <div class="elixir__features--6">
-            <h2>Extensibility</h2>
+            <h2>Erlang compatible </h2>
             <p>
-              Elixir has been designed to be extensible, letting developers
-              naturally extend the language to particular domains, in order to
-              increase their productivity.
+              Elixir é executado na VM Erlang, dando aos desenvolvedores acesso completo ao ecossistema Erlang, usado por empresas como Heroku, WhatsApp, Klarna e muitas outras para criar aplicativos distribuídos e tolerantes a falhas. Um programador Elixir pode invocar qualquer função Erlang sem custo de tempo de execução.
             </p>
           </div>
         </div>
@@ -219,25 +232,19 @@
           <div class="how__step--1">
             <h2>Pesquisas em Tecnologia</h2>
             <p>
-              All Elixir code runs inside lightweight threads of execution
-              (called processes) that are isolated and exchange information via
-              messages.
+              Através do financiamento de bolsas de mestrado e doutorado nós apoiamos pesquisas em diversos seguimentos de tecnologia: Machine learning, ... ,
             </p>
           </div>
           <div class="how__step--2">
             <h2>Elixir</h2>
             <p>
-              The unavoidable truth about software running in production is that
-              things will go wrong. Even more when we take network, file
-              systems, and more.
+              As pesquisas apoiadas por nós devem ser obrigatoriamente desenvolvidas utilizando a linguagem de programção Elixir.
             </p>
           </div>
           <div class="how__step--3">
             <h2>Open-Source</h2>
             <p>
-              Elixir has been designed to be extensible, letting developers
-              naturally extend the language to particular domains, in order to
-              increase their productivity.
+              Ao final todas as pesquisas devem ser disponibilizadas em licenças de código aberto, assim você também contribui para o fortaleciment da nossa comunidade.
             </p>
           </div>
         </div>
@@ -247,29 +254,44 @@
         <h1 class="faq__tittle">FAQ</h1>
         <div class="faq__questions">
           <div class="faq__questions--1">
-            <h2>Pergunta 1</h2>
+            <h2>Como a minha Empresa pode dazer parte do projeto?</h2>
             <p>
-              Lorem ipsum is a placeholder text commonly used to demonstrate the
-              visual form of a document or a typeface without relying on
-              meaningful content.
+              Para a sua empresa fazer parte do projeto, basta preencher o formulário clicando aqui.
             </p>
           </div>
           <div class="faq__questions--2">
-            <h2>Pergunta 2</h2>
+            <h2>Como a minha Universidade pode fazer parte do projeto?</h2>
             <p>
-              Lorem ipsum is a placeholder text commonly used to demonstrate the
-              visual form of a document or a typeface without relying on
-              meaningful content.
+              Para a sua universidade fazer parte do projeto, basta preencher o formulário clicando aqui.
             </p>
           </div>
           <div class="faq__questions--3">
-            <h2>Pergunta 3</h2>
+            <h2>Como me inscrevo para receber uma bolsa de pesquisa?</h2>
             <p>
-              Lorem ipsum is a placeholder text commonly used to demonstrate the
-              visual form of a document or a typeface without relying on
-              meaningful content.
+              Para fazer a sua inscrição basta preencher o formulário abaixo.
+
+              Você receberá uma devolutiva em até X dias.
             </p>
           </div>
+          <div class="faq__questions--4">
+            <h2>Qual a duração do financiamento de uma bolsa de Mestrado e/ou Doutorado?</h2>
+            <p>
+             A duração de uma bolsa é de 1(um) ano, ou seja, serão feitos 12 pagamentos a sua instituição.
+            </p>
+          </div>
+          <div class="faq__questions--4">
+            <h2>O que é esperado dos Pesquisadores ao receber uma bolsa?</h2>
+            <p>
+              É esperado que você desenvolva sua pesquisa em Tecnologia (em suas diversas áreas) usando a linguagem de programação Elixir e que ao final sua pesquisa seja disponibilizada em licenças de código aberto.
+            </p>
+          </div>
+          <div class="faq__questions--5">
+            <h2>Como receberei a bolsa de pesquisa?</h2>
+            <p>
+              O valor será pela empresa patrocinadora a sua universidade, que por sua vez será responsável pela a sua remuneração.
+            </p>
+          </div>
+          
         </div>
       </section>
     </main>
@@ -298,7 +320,7 @@
         <div class="box__socialmedia">
           <img src="assets/img/icon__github.png" />
           <img src="assets/img/icon__twitter.png" />
-          <p>Paulo Valim</p>
+          <p>João Paulo Moraes and Paulo Valim</p>
         </div>
       </div>
     </footer>

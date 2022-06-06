@@ -238,149 +238,116 @@
             <img src="assets/img/img__logo--oficial.png" alt="Logo Elixir" />
           </div>
         </div>
-        <div class="elixir__features">
-          <div class="elixir__features--1">
-            <h2>Scalability</h2>
-            <p>
-              Todo o código Elixir é executado dentro de threads de execução
-              leves (chamados de processos) que são isolados e trocam
-              informações por meio de mensagens. O isolamento permite que os
-              processos sejam coletados de forma independente, usando todos os
-              recursos da máquina da maneira mais eficiente possível.
-            </p>
-          </div>
-          <div class="elixir__features--2">
-            <h2>Fault-tolerance</h2>
-            <p>
-              A verdade inevitável sobre software rodando em produção é que as
-              coisas vão dar errado. Para lidar com falhas, Elixir fornece
-              supervisores que descrevem como reiniciar partes do seu sistema
-              quando as coisas dão errado, voltando a um estado inicial
-              conhecido que é garantido para funcionar.
-            </p>
-          </div>
-          <div class="elixir__features--3">
-            <h2>Extensibility</h2>
-            <p>
-              Elixir foi projetado para ser extensível, permitindo que os
-              desenvolvedores estendam naturalmente a linguagem para domínios
-              específicos, a fim de aumentar sua produtividade. Além permitir
-              testes executados em paralelo, usando o maior número possível de
-              núcleos de CPU e fornercer ótimos relatórios em caso de falhas.
-            </p>
-          </div>
-          <div class="elixir__features--4">
-            <h2>Distribuition</h2>
-            <p>
-              Em Elixir os processos são capazes de se comunicar com outros
-              processos executados em máquinas diferentes na mesma rede. Isso
-              fornece a base para distribuição, permitindo que os
-              desenvolvedores coordenem o trabalho em vários permitindo também
-              um escalonamento vertical.
-            </p>
-          </div>
-          <div class="elixir__features--5">
-            <h2>Functional programming</h2>
-            <p>
-              A programação funcional promove um estilo de codificação que ajuda
-              os desenvolvedores a escrever um código curto, conciso e de fácil
-              manutenção. O Elixir depende muito desses recursos para garantir
-              que seu software funcione sob as restrições esperadas. E quando
-              não for, não se preocupe, os supervisores te apoiam!
-            </p>
-          </div>
-          <div class="elixir__features--6">
-            <h2>Erlang compatible</h2>
-            <p>
-              Elixir é executado na VM Erlang, dando aos desenvolvedores acesso
-              completo ao ecossistema Erlang, usado por empresas como Heroku,
-              WhatsApp, Klarna e muitas outras para criar aplicativos
-              distribuídos e tolerantes a falhas. Um programador Elixir pode
-              invocar qualquer função Erlang sem custo de tempo de execução.
-            </p>
+        <hr />
+        <div class="research">
+          <h1>Areas de Interesse</h1>
+          <div class="research__field">
+            <div class="research__field--1">
+              <h2>Computação numérica e aprendizado de máquina</h2>
+              <p>
+                A comunidade Elixir começou em 2021 um esforço para trazer
+                abstrações de
+                <a
+                  href="https://github.com/elixir-nx/nx/tree/main/nx#readme"
+                  target="_blank"
+                  >computação numérica</a
+                >
+                para o ecossistema, incluindo execução em GPUs. Temos interesse
+                em pesquisa em redes neurais com
+                <a href="https://github.com/elixir-nx/axon" target="_blank"
+                  >Axon</a
+                >
+                e aprendizado de máquina como um todo.
+              </p>
+            </div>
+            <div class="research__field--2">
+              <h2>Ensino e cadernos computacionais</h2>
+              <p>
+                Temos interesse em tornar o Elixir, uma linguagem funcional,
+                concorrente, e distribuída, mais acessível para o ensino e
+                documentação. Uma iniciativa recente nessa área é o
+                <a href="https://livebook.dev" target="_blank">Livebook</a>, que
+                deixa o aprendizado com o Elixir mais acessível e moderno
+                através de cadernos computacionais.
+              </p>
+            </div>
+            <div class="research__field--3">
+              <h2>Sistema concorrentes e distribuidos</h2>
+              <p>
+                O Elixir roda em cima da máquina virtual do Erlang, desenhada
+                para a construção de sistemas concorrentes e distribuidos.
+                Estudo de algoritmos distribuídos, métodos formais, tolerância a
+                falhas, CRDTs, e mais são áreas de interesse.
+              </p>
+            </div>
+            <div class="research__field--4">
+              <h2>Compiladores e tipagem</h2>
+              <p>
+                Código Elixir compila para o formato <code>.beam</code>, que o
+                formato de código da Erlang VM. Quando carregado, o código é
+                compilado just-in time para código de máquina. Exemplos de áreas
+                de pesquisa incluem aplicações de otimizações a nível de SSA,
+                tipagem, alocação de registro, e durante a emissão de código de
+                máquina.
+              </p>
+            </div>
+            <div class="research__field--5">
+              <h2>A sua sugestão!</h2>
+              <p>
+                O nosso maior interesse é em fomentar a pesquisa, independente
+                da área de interesse. As áreas acima são baseadas em atividades
+                já existentes, mas outras áreas e sugestão são bem-vindas, como
+                Engenharia de software, Computação paralela, Processamento de
+                dados, e mais!
+              </p>
+            </div>
+            <div class="research__field--6">
+              <img
+                class="img__oval"
+                src="assets/img/shapes__oval--dark.svg"
+                alt="logo pesquise com elixir"
+              />
+              <img
+                class="img__square"
+                src="assets/img/shapes__square--light.svg"
+                alt="logo pesquise com elixir"
+              />
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Áreas de Interesse de Pesquisa-->
+      <!-- Requisitos do Programa -->
 
-      <section id="research">
+      <section id="how">
         <h1>Requisitos do Programa</h1>
-        <div class="research__field">
-          <div class="research__field--1">
-            <h2>Computação numérica e aprendizado de máquina</h2>
+        <div class="how__step">
+          <div class="how__step--1">
+            <h2>Pesquisas em Tecnologia</h2>
             <p>
-              A comunidade Elixir começou em 2021 um esforço para trazer
-              abstrações de
-              <a
-                href="https://github.com/elixir-nx/nx/tree/main/nx#readme"
-                target="_blank"
-                >computação numérica</a
-              >
-              para o ecossistema, incluindo execução em GPUs. Temos interesse em
-              pesquisa em redes neurais com
-              <a href="https://github.com/elixir-nx/axon" target="_blank"
-                >Axon</a
-              >
-              e aprendizado de máquina como um todo.
+              As bolsas de mestrado e doutorado devem ser destinadas a área de
+              tecnologia.
             </p>
           </div>
-          <div class="research__field--2">
-            <h2>Ensino e cadernos computacionais</h2>
+          <div class="how__step--2">
+            <h2>Elixir</h2>
             <p>
-              Temos interesse em tornar o Elixir, uma linguagem funcional,
-              concorrente, e distribuída, mais acessível para o ensino e
-              documentação. Uma iniciativa recente nessa área é o
-              <a href="https://livebook.dev" target="_blank">Livebook</a>, que
-              deixa o aprendizado com o Elixir mais acessível e moderno através
-              de cadernos computacionais.
+              A maior parte do escopo de pesquisa deve ser desenvolvido em
+              Elixir ou ter o Elixir e a Máquina Virtual do Erlang como foco.
             </p>
           </div>
-          <div class="research__field--3">
-            <h2>Sistema concorrentes e distribuidos</h2>
+          <div class="how__step--3">
+            <h2>Open-Source</h2>
             <p>
-              O Elixir roda em cima da máquina virtual do Erlang, desenhada para
-              a construção de sistemas concorrentes e distribuidos. Estudo de
-              algoritmos distribuídos, métodos formais, tolerância a falhas,
-              CRDTs, e mais são áreas de interesse.
+              O código desenvolvido durante a pesquisa deve ser disponibilizado
+              em licenças de código aberto, de forma a contribuir para o
+              fortalecimento da comunidade.
             </p>
-          </div>
-          <div class="research__field--4">
-            <h2>Compiladores e tipagem</h2>
-            <p>
-              Código Elixir compila para o formato <code>.beam</code>, que o
-              formato de código da Erlang VM. Quando carregado, o código é
-              compilado just-in time para código de máquina. Exemplos de áreas
-              de pesquisa incluem aplicações de otimizações a nível de SSA,
-              tipagem, alocação de registro, e durante a emissão de código de
-              máquina.
-            </p>
-          </div>
-          <div class="research__field--5">
-            <h2>A sua sugestão!</h2>
-            <p>
-              O nosso maior interesse é em fomentar a pesquisa, independente da
-              área de interesse. As áreas acima são baseadas em atividades já
-              existentes, mas outras áreas e sugestão são bem-vindas, como
-              Engenharia de software, Computação paralela, Processamento de
-              dados, e mais!
-            </p>
-          </div>
-          <div class="research__field--6">
-            <img
-              class="img__oval"
-              src="assets/img/shapes__oval--dark.svg"
-              alt="logo pesquise com elixir"
-            />
-            <img
-              class="img__square"
-              src="assets/img/shapes__square--light.svg"
-              alt="logo pesquise com elixir"
-            />
           </div>
         </div>
       </section>
       <hr />
+
       <!-- Requisitos do Programa -->
 
       <section id="how">

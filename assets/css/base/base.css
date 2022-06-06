@@ -52,7 +52,7 @@ footer > div > ul > li > a:hover {
 .whyElixir,
 .elixir__features,
 #how,
-#research,
+.research,
 #faq,
 hr,
 .box__one,
@@ -88,7 +88,8 @@ hr,
 .papers__published--item > a:hover,
 .papers__published--details > a:hover,
 .papers__all > button > a:hover,
-.research__field > div > p > a:hover .faq__questions > div > p > a:hover {
+.research__field > div > p > a:hover,
+.faq__questions > div > p > a:hover {
   text-decoration: underline;
 }
 
@@ -109,7 +110,7 @@ h2 {
 .papers__title,
 #elixir,
 #how,
-#research {
+.research {
   margin-top: 5rem;
 }
 

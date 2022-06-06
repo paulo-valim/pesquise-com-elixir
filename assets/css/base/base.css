@@ -119,6 +119,7 @@ h2 {
   gap: 4rem;
 
   justify-items: stretch;
+  align-items: center;
 }
 
 .partners__cta {

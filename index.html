@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pesquise com Elixir</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon2.png">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon2.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,13 +16,14 @@
     <link rel="stylesheet" href="assets/css/components/components.css" />
   </head>
   <body>
-  
     <!-- top bar notification -->
-  
-    <div class="topbar">Temos 3 bolsas disponíveis, faça sua inscrição!</div>
-  
+
+    <div class="topbar">
+      Temos 3 bolsas disponíveis, envie a sua proposta de projeto de pesquisa!
+    </div>
+
     <!-- Navbar desktop  -->
-  
+
     <header>
       <nav>
         <ul class="nav__menu">
@@ -34,9 +35,9 @@
         </ul>
       </nav>
     </header>
-   
+
     <!-- Intro -->
-   
+
     <main>
       <section id="home" class="banner">
         <div class="banner__desktop">
@@ -54,16 +55,25 @@
               Conectamos empresas e universidades brasileiras com bolsas de
               mestrado e doutorado
             </p>
-            <button class="button">Fazer Inscrição</button>
-            <button class="button button--darkText" onclick="window.location.href='#how'">
-              Saiba mais</a>
+            <button
+              class="button"
+              onclick="window.open('https://forms.gle/r3yqNVbMxafhqmDK8','_blank')"
+              target="_blank"
+            >
+              Aplicações Abertas!
+            </button>
+            <button
+              class="button button--darkText"
+              onclick="window.location.href='#how'"
+            >
+              Saiba mais
             </button>
           </div>
         </div>
       </section>
-     
+
       <!-- Empresas Apoiadoras -->
-     
+
       <section id="partners">
         <div class="partners__title">
           <h1>Empresas apoiadoras</h1>
@@ -88,13 +98,19 @@
         </div>
         <div class="partners__cta">
           <hr />
-          <button class="button button--outlined">Quero apoiar!</button>
+          <button
+            class="button button--outlined"
+            onclick="window.open('https://forms.gle/ouvyouXwiLsXYXYk6','_blank')"
+            target="_blank"
+          >
+            Quero apoiar!
+          </button>
           <hr />
         </div>
       </section>
-     
+
       <!-- Universidades Participantes -->
-     
+
       <section id="universities">
         <div class="universities__title">
           <h1>Universidades participantes</h1>
@@ -119,13 +135,19 @@
         </div>
         <div class="universities__cta">
           <hr />
-          <button class="button button--outlined">Quero participar!</button>
+          <button
+            class="button button--outlined"
+            onclick="window.open('https://forms.gle/UQGUskoVGLbXQBYX8','_blank')"
+            target="_blank"
+          >
+            Quero participar!
+          </button>
           <hr />
         </div>
       </section>
-     
+
       <!-- Pesquisas Publicadas -->
-     
+
       <section id="papers">
         <div class="papers__title">
           <h1>Pesquisas Publicadas</h1>
@@ -185,7 +207,7 @@
           </ol>
         </div>
       </section>
-      
+
       <!-- Sobre o Elixir -->
 
       <section id="elixir">
@@ -194,13 +216,23 @@
             <h1>Por que Elixir?</h1>
             <div class="whyElixir__description">
               <p>
-                Elixir é uma linguagem de programação dinâmica e funcional, usada
-                para construir aplicações escaláveis desenvolvida pelo brasileiro
-                José Valim em 2012.
+                Elixir é uma linguagem de programação dinâmica e funcional,
+                usada para construir aplicações escaláveis desenvolvida pelo
+                brasileiro José Valim em 2012.
               </p>
-              <p>O Elixir roda em cima da Máquina Virtual do Erlang, conhecida pela execução de sistemas distribuídos, tolerantes a falhas e de baixa latência.</p>
+              <p>
+                O Elixir roda em cima da Máquina Virtual do Erlang, conhecida
+                pela execução de sistemas distribuídos, tolerantes a falhas e de
+                baixa latência.
+              </p>
             </div>
-            <button class="button button--none button__whyElixir" onclick="window.open('https://elixir-lang.org/','_blank')" target="_blank">saiba mais</button>
+            <button
+              class="button button--none button__whyElixir"
+              onclick="window.open('https://elixir-lang.org/','_blank')"
+              target="_blank"
+            >
+              saiba mais
+            </button>
           </div>
           <div class="whyElixir__logo">
             <img src="assets/img/img__logo--oficial.png" alt="Logo Elixir" />
@@ -210,115 +242,146 @@
           <div class="elixir__features--1">
             <h2>Scalability</h2>
             <p>
-              Todo o código Elixir é executado dentro de threads de execução leves (chamados de processos) que são isolados e trocam informações por meio de mensagens. O isolamento permite que os processos sejam coletados de forma independente, usando todos os recursos da máquina da maneira mais eficiente possível.
+              Todo o código Elixir é executado dentro de threads de execução
+              leves (chamados de processos) que são isolados e trocam
+              informações por meio de mensagens. O isolamento permite que os
+              processos sejam coletados de forma independente, usando todos os
+              recursos da máquina da maneira mais eficiente possível.
             </p>
           </div>
           <div class="elixir__features--2">
             <h2>Fault-tolerance</h2>
             <p>
-              A verdade inevitável sobre software rodando em produção é que as coisas vão dar errado. Para lidar com falhas, Elixir fornece supervisores que descrevem como reiniciar partes do seu sistema quando as coisas dão errado, voltando a um estado inicial conhecido que é garantido para funcionar. 
+              A verdade inevitável sobre software rodando em produção é que as
+              coisas vão dar errado. Para lidar com falhas, Elixir fornece
+              supervisores que descrevem como reiniciar partes do seu sistema
+              quando as coisas dão errado, voltando a um estado inicial
+              conhecido que é garantido para funcionar.
             </p>
           </div>
           <div class="elixir__features--3">
             <h2>Extensibility</h2>
             <p>
-              Elixir foi projetado para ser extensível, permitindo que os desenvolvedores estendam naturalmente a linguagem para domínios específicos, a fim de aumentar sua produtividade. 
-              Além permitir testes executados em paralelo, usando o maior número possível de núcleos de CPU e fornercer ótimos relatórios em caso de falhas.
+              Elixir foi projetado para ser extensível, permitindo que os
+              desenvolvedores estendam naturalmente a linguagem para domínios
+              específicos, a fim de aumentar sua produtividade. Além permitir
+              testes executados em paralelo, usando o maior número possível de
+              núcleos de CPU e fornercer ótimos relatórios em caso de falhas.
             </p>
           </div>
           <div class="elixir__features--4">
             <h2>Distribuition</h2>
             <p>
-              Em Elixir os processos são capazes de se comunicar com outros processos executados em máquinas diferentes na mesma rede. Isso fornece a base para distribuição, permitindo que os desenvolvedores coordenem o trabalho em vários permitindo também um escalonamento vertical. </p>
+              Em Elixir os processos são capazes de se comunicar com outros
+              processos executados em máquinas diferentes na mesma rede. Isso
+              fornece a base para distribuição, permitindo que os
+              desenvolvedores coordenem o trabalho em vários permitindo também
+              um escalonamento vertical.
+            </p>
           </div>
           <div class="elixir__features--5">
             <h2>Functional programming</h2>
             <p>
-              A programação funcional promove um estilo de codificação que ajuda os desenvolvedores a escrever um código curto, conciso e de fácil manutenção. O Elixir depende muito desses recursos para garantir que seu software funcione sob as restrições esperadas. E quando não for, não se preocupe, os supervisores te apoiam!
+              A programação funcional promove um estilo de codificação que ajuda
+              os desenvolvedores a escrever um código curto, conciso e de fácil
+              manutenção. O Elixir depende muito desses recursos para garantir
+              que seu software funcione sob as restrições esperadas. E quando
+              não for, não se preocupe, os supervisores te apoiam!
             </p>
           </div>
           <div class="elixir__features--6">
-            <h2>Erlang compatible </h2>
+            <h2>Erlang compatible</h2>
             <p>
-              Elixir é executado na VM Erlang, dando aos desenvolvedores acesso completo ao ecossistema Erlang, usado por empresas como Heroku, WhatsApp, Klarna e muitas outras para criar aplicativos distribuídos e tolerantes a falhas. Um programador Elixir pode invocar qualquer função Erlang sem custo de tempo de execução.
+              Elixir é executado na VM Erlang, dando aos desenvolvedores acesso
+              completo ao ecossistema Erlang, usado por empresas como Heroku,
+              WhatsApp, Klarna e muitas outras para criar aplicativos
+              distribuídos e tolerantes a falhas. Um programador Elixir pode
+              invocar qualquer função Erlang sem custo de tempo de execução.
             </p>
           </div>
         </div>
       </section>
 
       <!-- Áreas de Interesse de Pesquisa-->
-      
+
       <section id="research">
         <h1>Requisitos do Programa</h1>
         <div class="research__field">
           <div class="research__field--1">
             <h2>Computação numérica e aprendizado de máquina</h2>
             <p>
-              A comunidade Elixir começou em 2021 um esforço
-              para trazer abstrações de computação numérica
-              (https://github.com/elixir-nx/nx/tree/main/nx#readme)
-              para o ecossistema, incluindo execução em GPUs.
-              Temos interesse em pesquisa em redes neurais com Axon
-              (https://github.com/elixir-nx/axon) e aprendizado de
-              máquina como um todo.
+              A comunidade Elixir começou em 2021 um esforço para trazer
+              abstrações de
+              <a
+                href="https://github.com/elixir-nx/nx/tree/main/nx#readme"
+                target="_blank"
+                >computação numérica</a
+              >
+              para o ecossistema, incluindo execução em GPUs. Temos interesse em
+              pesquisa em redes neurais com
+              <a href="https://github.com/elixir-nx/axon" target="_blank"
+                >Axon</a
+              >
+              e aprendizado de máquina como um todo.
             </p>
           </div>
           <div class="research__field--2">
             <h2>Ensino e cadernos computacionais</h2>
             <p>
-              Temos interesse em tornar o Elixir, uma linguagem
-              funcional, concorrente, e distribuída, mais acessível
-              para o ensino e documentação. Uma iniciativa
-              recente nessa área é o Livebook (https://livebook.dev),
-              que deixa o aprendizado com o Elixir mais acessível
-              e moderno através de cadernos computacionais.
+              Temos interesse em tornar o Elixir, uma linguagem funcional,
+              concorrente, e distribuída, mais acessível para o ensino e
+              documentação. Uma iniciativa recente nessa área é o
+              <a href="https://livebook.dev" target="_blank">Livebook</a>, que
+              deixa o aprendizado com o Elixir mais acessível e moderno através
+              de cadernos computacionais.
             </p>
           </div>
           <div class="research__field--3">
             <h2>Sistema concorrentes e distribuidos</h2>
             <p>
-              O Elixir roda em cima da máquina virtual do Erlang,
-              desenhada para a construção de sistemas concorrentes
-              e distribuidos. Estudo de algoritmos distribuídos,
-              métodos formais, tolerância a falhas, CRDTs, e mais
-              são áreas de interesse.
+              O Elixir roda em cima da máquina virtual do Erlang, desenhada para
+              a construção de sistemas concorrentes e distribuidos. Estudo de
+              algoritmos distribuídos, métodos formais, tolerância a falhas,
+              CRDTs, e mais são áreas de interesse.
             </p>
           </div>
           <div class="research__field--4">
             <h2>Compiladores e tipagem</h2>
             <p>
-              Código Elixir compila para o formato <code>.beam</code>,
-              que o formato de código da Erlang VM. Quando carregado,
-              o código é compilado just-in time para código de máquina.
-              Exemplos de áreas de pesquisa incluem aplicações de
-              otimizações a nível de SSA, tipagem, alocação de registro,
-              e durante a emissão de código de máquina.
+              Código Elixir compila para o formato <code>.beam</code>, que o
+              formato de código da Erlang VM. Quando carregado, o código é
+              compilado just-in time para código de máquina. Exemplos de áreas
+              de pesquisa incluem aplicações de otimizações a nível de SSA,
+              tipagem, alocação de registro, e durante a emissão de código de
+              máquina.
             </p>
           </div>
           <div class="research__field--5">
             <h2>A sua sugestão!</h2>
             <p>
-              O nosso maior interesse é em fomentar a pesquisa, independente
-              da área de interesse. As áreas acima são baseadas em atividades
-              já existentes, mas outras áreas e sugestão são bem-vindas,
-              como Engenharia de software, Computação paralela, Processamento
-              de dados, e mais!
+              O nosso maior interesse é em fomentar a pesquisa, independente da
+              área de interesse. As áreas acima são baseadas em atividades já
+              existentes, mas outras áreas e sugestão são bem-vindas, como
+              Engenharia de software, Computação paralela, Processamento de
+              dados, e mais!
             </p>
           </div>
           <div class="research__field--6">
-            <img class="img__oval"
-            src="assets/img/shapes__oval--dark.svg"
-            alt="logo pesquise com elixir"
-          />      
-            <img class="img__square"
-            src="assets/img/shapes__square--light.svg"
-            alt="logo pesquise com elixir"
+            <img
+              class="img__oval"
+              src="assets/img/shapes__oval--dark.svg"
+              alt="logo pesquise com elixir"
+            />
+            <img
+              class="img__square"
+              src="assets/img/shapes__square--light.svg"
+              alt="logo pesquise com elixir"
             />
           </div>
         </div>
       </section>
       <hr />
-       <!-- Requisitos do Programa -->
+      <!-- Requisitos do Programa -->
 
       <section id="how">
         <h1>Requisitos do Programa</h1>
@@ -326,77 +389,88 @@
           <div class="how__step--1">
             <h2>Pesquisas em Tecnologia</h2>
             <p>
-              As bolsas de mestrado e doutorado devem ser destinadas a área de tecnologia.
+              As bolsas de mestrado e doutorado devem ser destinadas a área de
+              tecnologia.
             </p>
           </div>
           <div class="how__step--2">
             <h2>Elixir</h2>
             <p>
-              A maior parte do escopo de pesquisa deve ser desenvolvido em Elixir ou ter o
-              Elixir e a Máquina Virtual do Erlang como foco.
+              A maior parte do escopo de pesquisa deve ser desenvolvido em
+              Elixir ou ter o Elixir e a Máquina Virtual do Erlang como foco.
             </p>
           </div>
           <div class="how__step--3">
             <h2>Open-Source</h2>
             <p>
-              O código desenvolvido durante a pesquisa deve ser disponibilizado em licenças
-              de código aberto, de forma a contribuir para o fortalecimento da comunidade.
+              O código desenvolvido durante a pesquisa deve ser disponibilizado
+              em licenças de código aberto, de forma a contribuir para o
+              fortalecimento da comunidade.
             </p>
           </div>
         </div>
       </section>
       <hr />
 
-       <!-- Dúvidas Frequentes -->
-      
-       <section id="faq">
+      <!-- Dúvidas Frequentes -->
+
+      <section id="faq">
         <h1 class="faq__tittle">FAQ</h1>
         <div class="faq__questions">
           <div class="faq__questions--1">
             <h2>Como a minha Empresa pode dazer parte do projeto?</h2>
             <p>
-              Para a sua empresa fazer parte do projeto, basta preencher o formulário clicando aqui.
+              Para a sua empresa fazer parte do projeto, basta preencher o
+              formulário clicando aqui.
             </p>
           </div>
           <div class="faq__questions--2">
             <h2>Como a minha Universidade pode fazer parte do projeto?</h2>
             <p>
-              Para a sua universidade fazer parte do projeto, basta preencher o formulário clicando aqui.
+              Para a sua universidade fazer parte do projeto, basta preencher o
+              formulário clicando aqui.
             </p>
           </div>
           <div class="faq__questions--3">
             <h2>Como me inscrevo para receber uma bolsa de pesquisa?</h2>
             <p>
               Para fazer a sua inscrição basta preencher o formulário abaixo.
-
               Você receberá uma devolutiva em até X dias.
             </p>
           </div>
           <div class="faq__questions--4">
-            <h2>Qual a duração do financiamento de uma bolsa de Mestrado e/ou Doutorado?</h2>
+            <h2>
+              Qual a duração do financiamento de uma bolsa de Mestrado e/ou
+              Doutorado?
+            </h2>
             <p>
-             A duração de uma bolsa é de 1(um) ano, ou seja, serão feitos 12 pagamentos a sua instituição.
+              A duração de uma bolsa é de 1(um) ano, ou seja, serão feitos 12
+              pagamentos a sua instituição.
             </p>
           </div>
           <div class="faq__questions--4">
             <h2>O que é esperado dos Pesquisadores ao receber uma bolsa?</h2>
             <p>
-              É esperado que você desenvolva sua pesquisa em Tecnologia (em suas diversas áreas) usando a linguagem de programação Elixir e que ao final sua pesquisa seja disponibilizada em licenças de código aberto.
+              É esperado que você desenvolva sua pesquisa em Tecnologia (em suas
+              diversas áreas) usando a linguagem de programação Elixir e que ao
+              final sua pesquisa seja disponibilizada em licenças de código
+              aberto.
             </p>
           </div>
           <div class="faq__questions--5">
             <h2>Como receberei a bolsa de pesquisa?</h2>
             <p>
-              O valor será enviado pela empresa patrocinadora a sua universidade, que por sua vez será responsável pela a sua remuneração.
+              O valor será enviado pela empresa patrocinadora a sua
+              universidade, que por sua vez será responsável pela a sua
+              remuneração.
             </p>
           </div>
-          
         </div>
       </section>
     </main>
-     
+
     <!-- Footer -->
-    
+
     <footer>
       <div class="box__one">
         <img
@@ -422,7 +496,7 @@
         <div class="box__socialmedia">
           <img src="assets/img/icon__github.png" />
           <img src="assets/img/icon__twitter.png" />
-          <p>Feito com &#10084 by João Paulo Moraes and Paulo Valim.</p>
+          <p>Feito com &#10084; por João Paulo Moraes and Paulo Valim.</p>
         </div>
       </div>
     </footer>

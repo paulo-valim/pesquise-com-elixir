@@ -118,8 +118,14 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 4rem;
 
-  justify-items: stretch;
   align-items: center;
+  justify-items: center;
+}
+
+.partners__logo > img,
+.universities__logo > img {
+  max-width: 200px;
+  padding: 1rem;
 }
 
 .partners__cta {

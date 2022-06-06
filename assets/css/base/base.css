@@ -52,6 +52,7 @@ footer > div > ul > li > a:hover {
 .whyElixir,
 .elixir__features,
 #how,
+#research,
 #faq,
 hr,
 .box__one,
@@ -106,7 +107,8 @@ h2 {
 .universities__title,
 .papers__title,
 #elixir,
-#how {
+#how,
+#research {
   margin-top: 5rem;
 }
 
@@ -128,7 +130,8 @@ h2 {
   padding: 1rem;
 }
 
-.partners__cta {
+.partners__cta,
+.universities__cta {
   display: flex;
   align-items: center;
 
@@ -159,13 +162,6 @@ hr {
   padding-top: 0.5rem;
 }
 
-.papers__all {
-  display: flex;
-  justify-content: center;
-
-  margin-top: 1rem;
-}
-
 .whyElixir {
   display: flex;
   justify-content: space-between;
@@ -190,7 +186,8 @@ hr {
 }
 
 .elixir__features,
-.how__step {
+.how__step,
+.research__field {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 5rem 4rem;
@@ -210,10 +207,26 @@ hr {
 }
 
 div[class^="elixir__features--"] > p,
-div[class^="how__step--"] > p {
+div[class^="how__step--"] > p,
+div[class^="research__field--"] > p {
   margin-top: 1rem;
 
   line-height: 1.5rem;
+}
+
+.research__field--6 {
+  display: grid;
+}
+
+.img__oval {
+  align-self: center;
+  padding: 1rem;
+}
+
+.img__square {
+  align-self: center;
+  justify-self: end;
+  padding: 1rem;
 }
 
 div[class^="faq__questions--"] > p {

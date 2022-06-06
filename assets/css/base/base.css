@@ -87,7 +87,8 @@ hr,
 .banner__text > button > a:hover,
 .papers__published--item > a:hover,
 .papers__published--details > a:hover,
-.papers__all > button > a:hover {
+.papers__all > button > a:hover,
+.research__field > div > p > a:hover .faq__questions > div > p > a:hover {
   text-decoration: underline;
 }
 
@@ -153,7 +154,9 @@ hr {
 }
 
 .papers__published--item > a,
-.papers__published--details > a {
+.papers__published--details > a,
+.research__field > div > p > a,
+.faq__questions > div > p > a {
   font-weight: 600;
   color: var(--purple-600);
 }

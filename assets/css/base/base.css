@@ -49,6 +49,7 @@ footer > div > ul > li > a:hover {
 #partners,
 #universities,
 #papers,
+#projects,
 .whyElixir,
 .elixir__features,
 #how,
@@ -107,11 +108,16 @@ h2 {
 
 .partners__title,
 .universities__title,
+.projects__title,
 .papers__title,
 #elixir,
 #how,
-.research {
+#faq {
   margin-top: 5rem;
+}
+
+.research {
+ margin-top: 3rem;
 }
 
 .partners__logo,

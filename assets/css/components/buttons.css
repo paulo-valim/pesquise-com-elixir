@@ -10,6 +10,8 @@
   padding: 1rem 6rem;
 
   border: none;
+
+  cursor: pointer;
 }
 
 .button--outlined {
@@ -47,5 +49,5 @@
 }
 
 .button__whyElixir {
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 0;
 }

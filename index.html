@@ -20,6 +20,7 @@
 
     <div class="topbar">
       Temos 3 bolsas disponíveis, envie a sua proposta de projeto de pesquisa!
+      <a href="#how">Saiba Mais</a>
     </div>
 
     <!-- Navbar desktop  -->
@@ -29,7 +30,7 @@
         <ul class="nav__menu">
           <li><a href="#home">Home</a></li>
           <li><a href="#partners">Parceiros</a></li>
-          <li><a href="#papers">Publicações</a></li>
+          <li><a href="#projects">Publicações</a></li>
           <li><a href="#how">Como funciona</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
@@ -42,19 +43,33 @@
       <section id="home" class="banner">
         <div class="banner__desktop">
           <img
+            class="img__logo"
             src="assets/img/img__logo--bglight.png"
             alt="logo pesquise com elixir"
             width="380"
             height="138.42"
           />
           <div class="banner__text">
-            <p class="banner__text--small">
-              Através da pesquisa e adoção do Elixir
-            </p>
+            <div class="banner__text--box">
+              <p class="banner__text--small">
+                Com objetivo de fomentar a pesquisa e adoção do Elixir
+              </p>
+              <img
+                class="img__circle"
+                src="assets/img/shapes__circle--dark.svg"
+                alt="logo pesquise com elixir"
+              />
+            </div>
             <p class="banner__text--big">
-              Conectamos empresas e universidades brasileiras com bolsas de
-              mestrado e doutorado
+              Conectamos universidades brasileiras a empresas que financiam e
+              apoiam a pesquisa em tecnologia através bolsas de mestrado e
+              doutorado.
             </p>
+            <img
+              class="img__rectangle"
+              src="assets/img/shapes__rectangle--light.svg"
+              alt="logo pesquise com elixir"
+            />
           </div>
         </div>
       </section>
@@ -90,7 +105,7 @@
             onclick="window.open('https://forms.gle/ouvyouXwiLsXYXYk6','_blank')"
             target="_blank"
           >
-            Quero apoiar!
+            Quero ser uma empresa apoiadora!
           </button>
           <hr />
         </div>
@@ -115,18 +130,41 @@
           <hr />
           <button
             class="button button--outlined"
-            onclick="window.open('https://forms.gle/UQGUskoVGLbXQBYX8','_blank')"
+            onclick="window.open('https://forms.gle/XKt3hwTsKq9G5GHq8','_blank')"
             target="_blank"
           >
-            Quero participar!
+            Pesquisador, envie seu projeto de pesquisa!
           </button>
           <hr />
         </div>
       </section>
 
+      <!-- Projetos em Andamento -->
+
       <section id="projects">
         <div class="projects__title">
           <h1>Projetos em andamento</h1>
+        </div>
+        <div class="projects__progress">
+          <ol class="projects__progress--list">
+            <li class="projects__progress--item">
+              1.
+              <a
+                href="https://github.com/lac-dcc/elixir-project"
+                target="_blank"
+                >An eBPF Backend for the Elixir Programming Language.</a
+              >
+              Writing a compiler plus a supporting library to translate Elixir
+              programs into low-level eBPF code that will run on the Linux
+              Kernel.
+              <p class="projects__progress--details">
+                Departamento de Ciência da Computação,
+                <a href="http://aserg.labsoft.dcc.ufmg.br/" target="_blank"
+                  >UFMG</a
+                >.
+              </p>
+            </li>
+          </ol>
         </div>
       </section>
 
@@ -198,7 +236,7 @@
             <img src="assets/img/img__logo--oficial.png" alt="Logo Elixir" />
           </div>
         </div>
-        <div class="research">
+        <div id="research" class="research">
           <h1>Áreas de Interesse</h1>
           <div class="research__field">
             <div class="research__field--1">
@@ -282,41 +320,47 @@
         <h1>Como funciona?</h1>
         <div class="how__step">
           <div class="how__step--1">
-            <h2>Pesquisa em tecnologia</h2>
+            <h2>Aplicação</h2>
             <p>
-              As bolsas de mestrado e doutorado devem ser destinadas a área de
-              tecnologia.
+              O Orientador ou Pesquisador responsável por coordenar bolsas de
+              mestrado e doutorado frente aos Institutos de Pesquisa, enviam o
+              seu projeto de pesquisa através do preenchimento
+              <a href="https://forms.gle/XKt3hwTsKq9G5GHq8" target="_blank"
+                >deste formulário</a
+              >.
             </p>
           </div>
           <div class="how__step--2">
-            <h2>Elixir</h2>
+            <h2>Avaliação</h2>
             <p>
-              A maior parte do escopo de pesquisa deve ser desenvolvido em
-              Elixir ou ter o Elixir e a Máquina Virtual do Erlang como foco.
+              Se o projeto atender os
+              <a href="#requirements">Requistos do Programa</a>, nós fazemos a
+              conexão entre a universidade e a Empresa que financiará as bolsas
+              de mestrado e/ou doutorado.
             </p>
           </div>
           <div class="how__step--3">
-            <h2>Open-Source</h2>
+            <h2>Aprovação</h2>
             <p>
-              O código desenvolvido durante a pesquisa deve ser disponibilizado
-              em licenças de código aberto, de forma a contribuir para o
-              fortalecimento da comunidade.
+              A empresa envia o valor referente a 1 (um) ano de Pesquisa para o
+              Instituto e/ou Universidade responsável. O Orientador divulga a
+              bolsa em sua Universidade e junto ao seu orientando desenvolve a
+              pesquisa.
             </p>
           </div>
         </div>
       </section>
-      <hr />
 
       <!-- Requisitos do Programa -->
 
-      <section id="how">
+      <section id="requirements">
         <h1>Requisitos do Programa</h1>
-        <div class="how__step">
-          <div class="how__step--1">
+        <div class="requirements__items">
+          <div class="requirements__items--1">
             <h2>Pesquisa em tecnologia</h2>
             <p>
               As bolsas de mestrado e doutorado devem ser destinadas a área de
-              tecnologia.
+              tecnologia. <a href="#research">Confira as áreas de interesse.</a>
             </p>
           </div>
           <div class="how__step--2">
@@ -359,17 +403,19 @@
             <p>
               Para a sua universidade fazer parte do projeto, basta preencher o
               formulário
-              <a href="https://forms.gle/UQGUskoVGLbXQBYX8" target="_blank"
+              <a href="https://forms.gle/KopkPi745nNrsGTJ9" target="_blank"
                 >clicando aqui</a
               >
               e entraremos em contato com mais detalhes.
             </p>
           </div>
           <div class="faq__questions--3">
-            <h2>Como me inscrevo para receber uma bolsa de pesquisa?</h2>
+            <h2>
+              Como submeter o meu projeto de pesquisa e receber uma bolsa?
+            </h2>
             <p>
-              Para fazer a sua inscrição basta preencher o
-              <a href="https://forms.gle/r3yqNVbMxafhqmDK8" target="_blank"
+              Basta preencher o
+              <a href="https://forms.gle/KopkPi745nNrsGTJ9" target="_blank"
                 >formulário</a
               >
               com o seu projeto de pesquisa.
@@ -377,7 +423,7 @@
           </div>
           <div class="faq__questions--4">
             <h2>
-              Qual a duração do financiamento de uma bolsa de Mestrado e/ou
+              Qual a duração do financiamento da bolsa de Mestrado e/ou
               Doutorado?
             </h2>
             <p>A duração de uma bolsa é de 1(um) ano.</p>
@@ -392,12 +438,21 @@
             </p>
           </div>
           <div class="faq__questions--5">
-            <h2>Como receberei a bolsa de pesquisa?</h2>
+            <h2>Como é feito o repasse da bolsa de pesquisa?</h2>
             <p>
-              O valor será enviado pela empresa patrocinadora a sua universidade
-              e/ou fundação de pesquisa, o valor de uma bolsa anual. A
-              Universidade e/ou Fundação de Pesquisa repassará a bolsa ao
-              estudante.
+              O valor referente a 1(um) ano de pesquisa, será enviado pela
+              empresa patrocinadora a Universidade e/ou Fundação de Pesquisa que
+              por sua vez será responsável pela seleção e oferta da bolsa aos
+              estudantes da Instituição.
+            </p>
+          </div>
+          <div class="faq__questions--6">
+            <h2>Sou estudante, posso aplicar a uma bolsa individual?</h2>
+            <p>
+              Não. Todo o processo é feito entre a empresa e a Universidade e/ou
+              Instituto de Pesquisa. Se esse for o seu caso, converse com o seu
+              orientador e peça-o para fazer a aplicação do Projeto de Pesquisa
+              em nosso site.
             </p>
           </div>
         </div>
@@ -420,7 +475,7 @@
         <ul class="nav__footer">
           <li><a href="#home">Home</a></li>
           <li><a href="#partners">Parceiros</a></li>
-          <li><a href="#papers">Publicações</a></li>
+          <li><a href="#projects">Publicações</a></li>
           <li><a href="#how_to">Como funciona</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>

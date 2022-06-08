@@ -7,6 +7,10 @@ body {
   color: var(--purple-600);
 }
 
+.topbar > a {
+  color: white;
+}
+
 header,
 .banner,
 #elixir {
@@ -31,10 +35,6 @@ footer > div > ul > li > a {
   text-align: right;
 }
 
-.nav__menu {
-  margin-right: 4.5rem;
-}
-
 li {
   display: inline-block;
   padding: 1rem;
@@ -53,6 +53,7 @@ footer > div > ul > li > a:hover {
 .whyElixir,
 .elixir__features,
 #how,
+#requirements,
 .research,
 #faq,
 hr,
@@ -71,21 +72,49 @@ hr,
   padding: 1.5rem 0 5rem 0;
 }
 
-.banner__text {
-  max-width: 580px;
+.img__logo {
+  align-self: center;
+  justify-self: center;
+  padding: 2rem;
+
+  height: auto;
+  max-width: 100%;
+}
+
+.banner__text--box {
+  display: flex;
+  justify-content: space-between;
 }
 
 .banner__text--small {
+  align-self: end;
+
   font-size: 0.875rem;
+  padding: 0 1rem;
+}
+
+.img__circle {
+  padding: 0 3rem;
+  max-width: 50px;
 }
 
 .banner__text--big {
-  font-size: 3rem;
+  max-width: 580px;
+  font-size: 2rem;
   margin-top: 0.5rem;
   margin-bottom: 2rem;
+  padding: 0 1rem;
 }
 
+.img__rectangle {
+  max-width: 125px;
+  padding: 0 1rem;
+}
+
+.topbar > a,
 .banner__text > button > a:hover,
+.projects__progress--item > a:hover,
+.projects__progress--details > a:hover,
 .papers__published--item > a:hover,
 .papers__published--details > a:hover,
 .papers__all > button > a:hover,
@@ -117,7 +146,7 @@ h2 {
 }
 
 .research {
- margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 .partners__logo,
@@ -152,24 +181,32 @@ hr {
   opacity: 25%;
 }
 
+.projects__progress--list,
 .papers__published--list {
   margin-top: 1rem;
 }
 
+.projects__progress--item,
 .papers__published--item {
   padding: 1rem 0 1rem 0;
+  line-height: 1.5rem;
 }
 
+.projects__progress--item > a,
+.projects__progress--details > a,
 .papers__published--item > a,
 .papers__published--details > a,
 .research__field > div > p > a,
+.requirements__items > div > p > a,
+.how__step > div > p > a,
 .faq__questions > div > p > a {
   font-weight: 600;
   color: var(--purple-600);
 }
 
+.projects__progress--details,
 .papers__published--details {
-  padding-top: 0.5rem;
+  padding-top: 0.25rem;
 }
 
 .whyElixir {
@@ -191,12 +228,17 @@ hr {
   line-height: 1.5rem;
 }
 
+.whyElixir__description > p {
+  padding: 0.5rem 0;
+}
+
 .whyElixir__logo {
   margin-right: 6.25rem;
 }
 
 .elixir__features,
 .how__step,
+.requirements__items,
 .research__field {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -218,6 +260,7 @@ hr {
 
 div[class^="elixir__features--"] > p,
 div[class^="how__step--"] > p,
+div[class^="requirements__items--"] > p,
 div[class^="research__field--"] > p {
   margin-top: 1rem;
 
@@ -289,7 +332,6 @@ footer {
   text-align: center;
 }
 
-.box__socialmedia > img,
-p {
+.box__socialmedia > img > p {
   padding: 0.5rem;
 }

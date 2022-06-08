@@ -61,6 +61,7 @@ hr,
 .box__two {
   max-width: 1180px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .banner__desktop {
@@ -220,6 +221,7 @@ hr {
 
 .whyElixir__box {
   max-width: 36.25rem;
+  padding: 0 1rem;
 }
 
 .whyElixir__description {
@@ -233,7 +235,7 @@ hr {
 }
 
 .whyElixir__logo {
-  margin-right: 6.25rem;
+  margin: 2rem auto;
 }
 
 .elixir__features,

@@ -53,6 +53,7 @@
 }
 
 @media (max-width: 505px) {
+  /* reduz padding dos botão cta */
   div.universities__cta > .button,
   .button--outilined,
   div.partners__cta > .button,

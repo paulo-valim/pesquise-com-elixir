@@ -448,6 +448,7 @@ footer {
 }
 
 @media (min-width: 792px) {
+  /* remove logo mobile */
   .whyElixir__box--mobile {
     display: none;
   }

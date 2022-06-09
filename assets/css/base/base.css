@@ -182,7 +182,8 @@ h2 {
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 4rem;
+  /* activate when more elements
+  gap: 4rem; */
 
   align-items: center;
   justify-items: center;
@@ -328,32 +329,29 @@ footer {
 }
 
 .box__one {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
 }
 
 .box__text {
-  /* max-width: 23.75rem; */
-  grid-area: 2 / 1 / 3 / 2;
-
+  max-width: 23.75rem;
   padding: 2rem 0;
 
   line-height: 1.5rem;
 }
 
 .box__img {
-  grid-area: 1 / 1 / 2 / 2;
-
   margin-top: 5rem;
 }
 
 .nav__footer {
-  grid-area: 1 / 2 / 2 / 4;
-
-  justify-self: end;
-
   margin-top: 5.5rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  align-content: flex-start;
 }
 
 .box__two > p {
@@ -450,6 +448,27 @@ footer {
 @media (min-width: 792px) {
   /* remove logo mobile */
   .whyElixir__box--mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 655px) {
+  /* remove as figuras decorativas na sessão pq elixir */
+  .research__field--6 {
+    display: none;
+  }
+}
+
+@media (max-width: 431px) {
+  /* remove os &nbsp; em universidades */
+  div.universities__logo > span {
+    display: none;
+  }
+}
+
+@media (max-width: 478px) {
+  /* remove nav do footer e coloca TOPO */
+  .nav__footer {
     display: none;
   }
 }

@@ -17,13 +17,13 @@ header,
   background-color: rgba(var(--purple-100), 0.15);
 }
 
-nav {
+.nav__desktop {
   max-width: 1180px;
   margin: 0 auto;
   padding: 2.5rem 0 2.5rem;
 }
 
-.nav__menu,
+.nav__desktop--menu,
 nav > ul > li > a,
 footer > div > ul > li > a {
   font-size: var(--size-menu);
@@ -45,7 +45,30 @@ footer > div > ul > li > a:hover {
   font-weight: var(--weight-menu_hover);
 }
 
+.nav__tablet,
+.nav__mobile {
+  max-height: 8.125rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__tablet > img,
+.img__mobile--logo {
+  height: 60px;
+  padding: 2rem 1rem;
+}
+
+.icon__menu {
+  align-self: center;
+  justify-self: center;
+
+  padding: 2rem;
+}
+
 .banner__desktop,
+.banner__tablet,
 #partners,
 #universities,
 #papers,
@@ -64,7 +87,8 @@ hr,
   padding: 0 1rem;
 }
 
-.banner__desktop {
+.banner__desktop,
+.banner__tablet {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -93,7 +117,7 @@ hr,
   align-self: end;
 
   font-size: 0.875rem;
-  padding: 0 1rem;
+  padding: 0 0 0.25rem 1rem;
 }
 
 .img__circle {
@@ -174,6 +198,7 @@ h2 {
 .universities__cta {
   display: flex;
   align-items: center;
+  justify-content: center;
 
   margin-top: 5rem;
 }
@@ -332,6 +357,10 @@ footer {
 }
 
 .box__two > p {
+  padding: 1rem 0;
+}
+
+.box__two > div > p {
   padding: 1rem;
 }
 
@@ -339,6 +368,87 @@ footer {
   text-align: center;
 }
 
+.box__socialmedia > img {
+  padding: 0 0.25rem;
+}
+
 .box__socialmedia > img > p {
   padding: 0.5rem;
+}
+
+@media (min-width: 1056px) {
+  /* Menu de Navegação */
+  nav.nav__mobile {
+    display: none;
+  }
+  nav.nav__tablet {
+    display: none;
+  }
+
+  /* Banner do Site */
+  div.banner__tablet {
+    display: none;
+  }
+}
+
+@media (max-width: 1055px) {
+  /* Menu de Navegação */
+  nav.nav__desktop {
+    display: none;
+  }
+  nav.nav__mobile {
+    display: none;
+  }
+
+  /* Banner do Site */
+  div.banner__desktop {
+    display: none;
+  }
+  div.banner__tablet {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 717px) {
+  /* Menu de Navegação */
+  nav.nav__tablet {
+    display: none;
+  }
+  nav.nav__mobile {
+    display: flex;
+  }
+
+  /* Linhas nos botões*/
+  .partners__cta > hr {
+    display: none;
+  }
+  .universities__cta > hr {
+    display: none;
+  }
+}
+
+@media (max-width: 791px) {
+  /* sessão por que Elixir*/
+  .whyElixir__box--mobile {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .whyElixir__box--mobile > img {
+    padding-left: 1rem;
+    width: 100px;
+    height: 100%;
+  }
+  .whyElixir__box > h1,
+  .whyElixir__logo {
+    display: none;
+  }
+}
+
+@media (min-width: 792px) {
+  .whyElixir__box--mobile {
+    display: none;
+  }
 }

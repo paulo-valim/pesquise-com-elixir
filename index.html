@@ -26,14 +26,33 @@
     <!-- Navbar desktop  -->
 
     <header>
-      <nav>
-        <ul class="nav__menu">
+      <nav class="nav__desktop">
+        <ul class="nav__desktop--menu">
           <li><a href="#home">Home</a></li>
           <li><a href="#partners">Parceiros</a></li>
           <li><a href="#projects">Publicações</a></li>
           <li><a href="#how">Como funciona</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
+      </nav>
+
+      <nav class="nav__tablet">
+        <img src="assets/img/img__logo--bglight.png" />
+        <ul class="nav__menu--tablet">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#partners">Parceiros</a></li>
+          <li><a href="#projects">Publicações</a></li>
+          <li><a href="#how">Como funciona</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav__mobile">
+        <img
+          class="img__mobile--logo"
+          src="assets/img/img__logo--bglight.png"
+        />
+        <img class="icon__menu" src="assets/img/icon__menu--mobile.png" />
       </nav>
     </header>
 
@@ -49,6 +68,30 @@
             width="380"
             height="138.42"
           />
+          <div class="banner__text">
+            <div class="banner__text--box">
+              <p class="banner__text--small">
+                Com objetivo de fomentar a pesquisa e adoção do Elixir
+              </p>
+              <img
+                class="img__circle"
+                src="assets/img/shapes__circle--dark.svg"
+                alt="logo pesquise com elixir"
+              />
+            </div>
+            <p class="banner__text--big">
+              Conectamos universidades brasileiras a empresas que financiam e
+              apoiam a pesquisa em tecnologia através bolsas de mestrado e
+              doutorado.
+            </p>
+            <img
+              class="img__rectangle"
+              src="assets/img/shapes__rectangle--light.svg"
+              alt="logo pesquise com elixir"
+            />
+          </div>
+        </div>
+        <div class="banner__tablet">
           <div class="banner__text">
             <div class="banner__text--box">
               <p class="banner__text--small">
@@ -212,6 +255,10 @@
         <div class="whyElixir">
           <div class="whyElixir__box">
             <h1>Por que Elixir?</h1>
+            <div class="whyElixir__box--mobile">
+              <h1>Por que Elixir?</h1>
+              <img src="assets/img/img__logo--oficial.png" alt="Logo Elixir" />
+            </div>
             <div class="whyElixir__description">
               <p>
                 Elixir é uma linguagem de programação dinâmica e funcional,

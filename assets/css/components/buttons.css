@@ -51,3 +51,12 @@
 .button__whyElixir {
   padding: 0.25rem 0;
 }
+
+@media (max-width: 505px) {
+  div.universities__cta > .button,
+  .button--outilined,
+  div.partners__cta > .button,
+  .button--outilined {
+    padding: 1rem 3rem;
+  }
+}

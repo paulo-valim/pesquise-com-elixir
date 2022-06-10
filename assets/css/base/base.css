@@ -20,12 +20,14 @@ header,
 .nav__desktop {
   max-width: 1180px;
   margin: 0 auto;
-  padding: 2.5rem 0 2.5rem;
+  padding: 2.5rem 1rem 2.5rem 1rem;
 }
 
 .nav__desktop--menu,
 nav > ul > li > a,
-footer > div > ul > li > a {
+footer > div > ul > li > a,
+footer > div > div > div > p > a,
+footer > div > div > p > a {
   font-size: var(--size-menu);
   font-weight: var(--weight-menu);
   line-height: var(--height-menu);
@@ -182,9 +184,7 @@ h2 {
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  /* activate when more elements
-  gap: 4rem; */
-
+  gap: 4rem;
   align-items: center;
   justify-items: center;
 }
@@ -354,6 +354,13 @@ footer {
   align-content: flex-start;
 }
 
+.nav__top {
+  display: inline-block;
+  min-width: 60px;
+  padding: 1rem 0 1rem 1rem;
+  line-height: 1.5rem;
+}
+
 .box__two > p {
   padding: 1rem 0;
 }
@@ -372,6 +379,15 @@ footer {
 
 .box__socialmedia > img > p {
   padding: 0.5rem;
+}
+
+.box__socialmedia > p > a {
+  font-size: var(--size-body);
+  color: var(--purple-200);
+}
+
+.box__socialmedia > p > a:hover {
+  font-weight: var(--weight-menu_hover);
 }
 
 @media (min-width: 1056px) {
@@ -459,16 +475,38 @@ footer {
   }
 }
 
-@media (max-width: 431px) {
+@media (max-width: 495px) {
   /* remove os &nbsp; em universidades */
   div.universities__logo > span {
     display: none;
   }
 }
 
-@media (max-width: 478px) {
+@media (max-width: 604px) {
   /* remove nav do footer e coloca TOPO */
   .nav__footer {
+    display: none;
+  }
+
+  .box__one {
+    display: block;
+  }
+
+  .box__one--mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .box__img {
+    width: 150px;
+    height: auto;
+  }
+}
+
+@media (min-width: 605px) {
+  /* remove TOPO do nav__footer */
+  .nav__top {
     display: none;
   }
 }

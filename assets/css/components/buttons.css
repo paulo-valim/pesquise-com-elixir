@@ -19,6 +19,12 @@
   border: none;
 }
 
+.button--nav--active {
+  background-color: var(--purple-600);
+  border: none;
+  color: white;
+}
+
 .button--outlined {
   background-color: unset;
 

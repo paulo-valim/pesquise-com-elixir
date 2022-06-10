@@ -37,7 +37,10 @@
 
       <!-- Navbar tablet  -->
       <nav class="nav__tablet">
-        <img src="assets/img/img__logo--bglight.png" />
+        <img
+          src="assets/img/img__logo--bglight.png"
+          alt="logotipo Pesquise com Elixir"
+        />
         <ul class="nav__menu--tablet">
           <li><a href="#home">Home</a></li>
           <li><a href="#partners">Parceiros</a></li>
@@ -49,13 +52,45 @@
 
       <!-- Navbar mobile  -->
       <nav class="nav__mobile">
-        <img
-          class="img__mobile--logo"
-          src="assets/img/img__logo--bglight.png"
-        />
-        <img class="icon__menu" src="assets/img/icon__menu--mobile.png" />
+        <div class="nav__mobile--box">
+          <img
+            class="img__mobile--logo"
+            src="assets/img/img__logo--bglight.png"
+            alt="logotipo Pesquise com Elixir"
+          />
+          <button class="button--nav" aria-label="Menu">
+            <img
+              class="icon__menu"
+              src="assets/img/icon__menu--mobile.png"
+              alt="Botão do menu de navegação"
+            />
+          </button>
+        </div>
+        <div class="nav__dropdown">
+          <ul class="nav__dropdown--mobile">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#partners">Parceiros</a></li>
+            <li><a href="#projects">Publicações</a></li>
+            <li><a href="#how">Como funciona</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
+
+    <!-- JS for Navbar mobile -->
+
+    <script>
+      const buttonMenu = document.querySelector(".button--nav");
+      const dropdownMenu = document.querySelector(".nav__dropdown");
+      const colorMenu = document.querySelector(".icon__menu");
+
+      buttonMenu.addEventListener("click", () => {
+        dropdownMenu.classList.toggle("nav__dropdown--active");
+        buttonMenu.classList.toggle("button--nav--active");
+        colorMenu.classList.toggle("icon__menu--active");
+      });
+    </script>
 
     <!-- Intro -->
 

@@ -14,6 +14,11 @@
   cursor: pointer;
 }
 
+.button--nav {
+  background-color: transparent;
+  border: none;
+}
+
 .button--outlined {
   background-color: unset;
 

@@ -47,8 +47,7 @@ footer > div > ul > li > a:hover {
   font-weight: var(--weight-menu_hover);
 }
 
-.nav__tablet,
-.nav__mobile {
+.nav__tablet {
   max-height: 8.125rem;
 
   display: flex;
@@ -62,11 +61,46 @@ footer > div > ul > li > a:hover {
   padding: 2rem 1rem;
 }
 
+.nav__mobile {
+  max-height: 8.125rem;
+}
+
+.nav__mobile--box {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
 .icon__menu {
   align-self: center;
   justify-self: center;
 
   padding: 2rem;
+}
+
+.icon__menu--active {
+  filter: brightness(0) invert(1);
+}
+
+.nav__dropdown {
+  background-color: var(--purple-600);
+  width: 50%;
+  position: absolute;
+  right: 1000vw;
+}
+
+.nav__dropdown--active {
+  right: 0;
+}
+
+.nav__dropdown--mobile > li {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+}
+
+.nav__dropdown--mobile > li > a {
+  color: white;
 }
 
 .banner__desktop,
@@ -383,7 +417,7 @@ footer {
 
 .box__socialmedia > p > a {
   font-size: var(--size-body);
-  color: var(--purple-200);
+  color: rgb(214, 173, 255);
 }
 
 .box__socialmedia > p > a:hover {
@@ -428,7 +462,12 @@ footer {
   nav.nav__tablet {
     display: none;
   }
+
   nav.nav__mobile {
+    display: block;
+  }
+
+  div.nav__mobile--box {
     display: flex;
   }
 

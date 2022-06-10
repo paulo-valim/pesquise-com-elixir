@@ -21,7 +21,7 @@
 
 .button--nav--active {
   background-color: var(--purple-600);
-  border: none;
+  border: var(--purple-600);
   color: white;
 }
 

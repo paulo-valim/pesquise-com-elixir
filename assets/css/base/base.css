@@ -223,8 +223,8 @@ h2 {
   justify-items: center;
 }
 
-.partners__logo > img,
-.universities__logo > img {
+.partners__logo > a > img,
+.universities__logo > a > img {
   max-width: 200px;
   padding: 1rem;
 }

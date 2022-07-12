@@ -226,6 +226,7 @@ h2 {
 .partners__logo > a > img,
 .universities__logo > a > img {
   max-width: 200px;
+  max-height: 150px;
   padding: 1rem;
 }
 
